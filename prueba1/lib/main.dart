@@ -11,16 +11,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Ejemplo de drawer',
+        title: 'Relación Flutter',
         home: Scaffold(
           appBar: AppBar(
-            title: const Text("Ejemplo de Drawer"),
+            title: const Text("Ejercicios"),
           ),
           drawer: const MenuLateral(),
           body: const Center(
-            child: Text("Parte principal"),
+            child: Text("Relación Flutter\n\n2º DAM\nRamón Marín Jiménez", style: TextStyle(fontSize: 38), textAlign: TextAlign.center),),
           ),
-        ));
+    );
   }
 }
 
