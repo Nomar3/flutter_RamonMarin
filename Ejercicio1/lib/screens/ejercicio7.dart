@@ -16,11 +16,10 @@ class Ejercicio7 extends StatelessWidget {
         child: ListView(
           // hacer esto con lo de la lista
         children:[ 
-          Image.asset("assets/caiman.jpg", width: 300, height: 250,),
-          Image.asset("assets/flamenco.jpg", width: 300, height: 250,),
-          Image.asset("assets/lemur.jpg", width: 300, height: 250,),
-          Image.asset("assets/leopard.jpg", width: 300, height: 250,),
-          Image.asset("assets/lince.jpg", width: 300, height: 250,)
+          SizedBox(width: double.infinity,
+            child: Image.asset("assets/flamenco.jpg", height: 50, repeat: ImageRepeat.repeatX),),
+          SizedBox(width: double.infinity,
+            child: Image(image: NetworkImage("https://imgs.search.brave.com/BzG4xw1Ffh62_qE609x5XWm4BEQvnc3ADpABUnjKIXI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9ncmFu/LWFsZXRhLWRlbC10/aWJ1ciVDMyVCM24t/YmxhbmNvLW9jJUMz/JUE5YW5vLW1hci0x/MjAyNTczNzguanBn"), height: 50, repeat: ImageRepeat.repeatX,),),
         ],
       ),
       ),

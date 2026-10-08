@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:control_style/control_style.dart';
 import 'package:google_fonts/google_fonts.dart'; //importamos el paquete de google fonts
 
 class Ejercicio6 extends StatelessWidget {
