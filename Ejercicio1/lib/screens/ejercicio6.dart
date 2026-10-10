@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:control_style/control_style.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:google_fonts/google_fonts.dart'; //importamos el paquete de google fonts
 
 class Ejercicio6 extends StatelessWidget {
@@ -31,13 +31,28 @@ class Ejercicio6 extends StatelessWidget {
               ),),
               Container(
               padding: const EdgeInsets.all(10), 
-              child: const Text(
-                "En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo cccccc cccccccccccccc cccccccccccccc cccc  cccccccc ccccccc cccccccccccc c cccccccccccc cccccccccccccc cccc  cccccccc ccccccc cccccccccccc ccccccccccccc cccccccccccccc cccc  cccccccc ccccccc cccccccccccc ccccccccccccc cccccccccccccc cccc  cccccccc ccccccc cccccccccccc ccccccccccccc cccccccccccccc cccc  cccccccc ccccccc cccccccccccc c",
-           	 maxLines: 3,
-                overflow: TextOverflow.ellipsis,style: TextStyle(fontFamily: 'Amazone-BT', fontSize: 30)
-              ),),
-          
+              child: AnimatedTextKit(
+                    animatedTexts: [
+                      TypewriterAnimatedText(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo est a tincidunt tincidunt. Maecenas aliquet magna quis finibus pellentesque. Proin faucibus nunc laoreet nunc sollicitudin, ut tempor nulla sollicitudin. Sed dictum mauris ac euismod commodo. Morbi placerat mi leo, sagittis tincidunt enim ultricies condimentum. Nunc sodales vitae ante quis commodo. Phasellus interdum ornare pulvinar. Nunc eros odio, fringilla eu orci vitae, ornare venenatis augue. In viverra sapien a erat egestas congue.',
+                        textStyle: const TextStyle(
+                          fontSize: 32.0,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Roboto',
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        speed: const Duration(milliseconds: 200),
+                      ),
+                    ],
 
+                    totalRepeatCount: 4,
+                    pause: const Duration(milliseconds: 1000),
+                    displayFullTextOnTap: true,
+                    stopPauseOnTap: true,
+                    
+                    //controller: myAnimatedTextController
+                  )
+              ),
         ],
       ),
       ),
