@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'menu_lateral.dart';
 import 'package:google_fonts/google_fonts.dart'; //importamos el paquete de google fonts
 
 class Ejercicio8 extends StatelessWidget {
@@ -25,17 +26,19 @@ class Ejercicio8 extends StatelessWidget {
       appBar: AppBar(
         title: Text('Ejercicio 8', style: GoogleFonts.lato()),
       ),
+      drawer: const MenuLateral(),
       body: Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
               logo,
               Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    logo,
-                    logo,
-                  ],
-                ),
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  logo,
+                  logo,
+                ],
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -48,6 +51,5 @@ class Ejercicio8 extends StatelessWidget {
             ),
           ),
         );
-
   }
   }
