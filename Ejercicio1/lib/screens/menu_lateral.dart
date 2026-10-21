@@ -9,6 +9,7 @@ import 'ejercicio6.dart';
 import 'ejercicio7.dart';
 import 'ejercicio8.dart';
 import 'ejercicio9.dart';
+import 'ejercicio10.dart';
 
 
 class MenuLateral extends StatelessWidget {
@@ -104,6 +105,14 @@ class MenuLateral extends StatelessWidget {
               Navigator.of(context).pop();
               Navigator.of(context).push(MaterialPageRoute(
                   builder: (BuildContext context) => const Ejercicio9()));
+            },
+          ),
+          ListTile(
+            title: const Text("Ejercicio 10"),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) => const Ejercicio10()));
             },
           )
         ],
