@@ -19,7 +19,7 @@ class Ejercicio11 extends StatelessWidget {
         title: Text('Ejercicio 11', style: GoogleFonts.lato()),
       ),
       drawer: const MenuLateral(),
-      body: Column(
+      body: ListView(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Cabecera(),
