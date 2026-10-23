@@ -20,10 +20,12 @@ class Ejercicio11 extends StatelessWidget {
       ),
       drawer: const MenuLateral(),
       body: ListView(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        //mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Cabecera(),
+
           Biografia(),
+          SizedBox(height: 10),
           BotonesSeguir(),
           Padding(
             padding: const EdgeInsets.all(20.0),
