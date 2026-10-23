@@ -7,24 +7,25 @@ class BotonesSeguir extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
     
-      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),//esto sino no hace padding bien
       child: Row(
         children: [
           
+          //con el expended hago q ocupe todo el espacio q se puede
           Expanded(
             flex: 2,
             child: ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue,
-                shape: RoundedRectangleBorder(
+                backgroundColor: Colors.grey,
+                shape: RoundedRectangleBorder( //hay esta forma que lo hace como se pide
                   borderRadius: BorderRadius.circular(5),
                 ),
               ),
               child: const Text('Follow'),
             ),
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: 10),//pequeño espaciado
           
           
           Expanded(

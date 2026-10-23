@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart'; // Paquete para abrir URLs
+import 'package:url_launcher/url_launcher.dart'; //paquete que abre las url
 
-final Uri _url = Uri.parse('https://www.instagram.com/'); //[cite: 4] URL de ejemplo
+final Uri _url = Uri.parse('https://www.instagram.com/');
 
 class Biografia extends StatelessWidget {
   const Biografia({super.key});
 
-  // Función para lanzar la URL de forma segura
+  //ft para que me deje lanzar la url, sino no lo hace
   Future<void> _launchUrl() async {
     if (!await launchUrl(_url)) {
       throw Exception('No se pudo lanzar $_url');
