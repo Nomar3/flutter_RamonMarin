@@ -1,4 +1,16 @@
-import "screens/screens.dart";
+import 'package:flutter/material.dart';
+
+import 'ejercicio1.dart';
+import 'ejercicio2.dart';
+import 'ejercicio3.dart';
+import 'ejercicio4.dart';
+import 'ejercicio5.dart';
+import 'ejercicio6.dart';
+import 'ejercicio7.dart';
+import 'ejercicio8.dart';
+import 'ejercicio9.dart';
+import 'ejercicio10.dart';
+import 'ejercicio11/ejercicio11.dart';
 
 
 class MenuLateral extends StatelessWidget {
