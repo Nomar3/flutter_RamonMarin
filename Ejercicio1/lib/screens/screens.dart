@@ -1,6 +1,9 @@
 export 'package:flutter/material.dart';
 export 'package:google_fonts/google_fonts.dart'; 
 
+//drawer:
+export 'menu_lateral.dart';
+
 // pantallas:
 export 'ejercicio1.dart';
 export 'ejercicio2.dart';
@@ -20,3 +23,5 @@ export 'ejercicio11/historias.dart';
 export 'ejercicio11/botones_seguir.dart';
 export 'ejercicio11/menu_secciones.dart';
 export 'ejercicio11/publicaciones_perfil.dart';
+
+export 'ejercicio12.dart';
