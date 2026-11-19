@@ -1,31 +1,14 @@
 import 'package:flutter/material.dart';
 import 'menu_lateral.dart';
 
-class Ejercicio10 extends StatelessWidget {
+class Ejercicio10 extends StatefulWidget {
   const Ejercicio10({super.key});
 
-  // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Ejercicio 10',
-      theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const MyHomePage(title: 'Ejercicio 10'),
-    );
-  }
+  State<Ejercicio10> createState() => _Ejercicio10State();
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class _Ejercicio10State extends State<Ejercicio10> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -49,9 +32,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       appBar: AppBar(
-
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: const Text('Ejercicio 10'),
       ),
       drawer: const MenuLateral(),
 

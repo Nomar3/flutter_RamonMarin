@@ -4,6 +4,9 @@ export 'package:google_fonts/google_fonts.dart';
 //drawer:
 export 'menu_lateral.dart';
 
+//principal:
+export '../home_screen.dart';
+
 // pantallas:
 export 'ejercicio1.dart';
 export 'ejercicio2.dart';

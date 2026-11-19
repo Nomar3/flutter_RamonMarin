@@ -21,6 +21,7 @@ class RandomColors extends StatefulWidget {
 class _RandomColors extends State<RandomColors> {
   bool juegoTerminado = false;//para establecer cuando acaba
   int points = 0;
+  int temporizador=20;
   late String randomName;
   late Color randomColor;
   var colorNames = ['azul', 'verde', 'naranja'];
@@ -44,14 +45,20 @@ class _RandomColors extends State<RandomColors> {
 //se puede hace con variables timer y cancelandolos
 //poner una contante que se reduzca cada segundo y cuando llegue a 0, se acabe el juego
   void timer() {
-    Timer(const Duration(milliseconds: 15000), () {
-      Timer.periodic(const Duration(milliseconds: 1000), (timer) {
-        getRandomColor();
-        getRandomName();
+
+    Timer.periodic(const Duration(milliseconds: 1000), (timer) {
+      getRandomColor();
+      getRandomName();
+      setState(() {});
+      });
+    Timer.periodic(const Duration(milliseconds: 1000), (timer){
+      temporizador--;
+      if (temporizador == 0) {
+        timer.cancel();
+        juegoTerminado = true;
         setState(() {});
-       });
+      }
     });
-    
     //juegoTerminado = true;
   }
 
@@ -95,9 +102,7 @@ Widget build(BuildContext context) {
     );
   }
 
-  return MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: Scaffold(
+  return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -117,8 +122,7 @@ Widget build(BuildContext context) {
           ),
         ],
       ),
-    ),
-  );
+    );
 }
 void getRandomColor() {
     Random random = Random();

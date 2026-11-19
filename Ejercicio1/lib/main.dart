@@ -1,4 +1,3 @@
-import "screens/menu_lateral.dart";
 import "screens/screens.dart";
 void main() => runApp(const MyApp());
 
@@ -13,14 +12,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Relación Flutter',
-        home: Scaffold(
-          appBar: AppBar(
-            title: const Text("Ejercicios"),
-          ),
-          drawer: const MenuLateral(),
-          body: const Center(
-            child: Text("Relación Flutter\n\n2º DAM\nRamón Marín Jiménez", style: TextStyle(fontSize: 38), textAlign: TextAlign.center),),
-          ),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => const HomeScreen(),
+          '/ejercicio1': (context) => const Ejercicio1(),
+          '/ejercicio2': (context) => const Ejercicio2(),
+          '/ejercicio3': (context) => const Ejercicio3(),
+          '/ejercicio4': (context) => const Ejercicio4(),
+          '/ejercicio5': (context) => const Ejercicio5(),
+          '/ejercicio6': (context) => const Ejercicio6(),
+          '/ejercicio7': (context) => const Ejercicio7(),
+          '/ejercicio8': (context) => const Ejercicio8(),
+          '/ejercicio9': (context) => const Ejercicio9(),
+          '/ejercicio10': (context) => const Ejercicio10(),
+          '/ejercicio11': (context) => const Ejercicio11(),
+          '/ejercicio12': (context) => const RandomColors(),
+        }
     );
   }
 }

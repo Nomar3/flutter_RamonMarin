@@ -76,6 +76,7 @@ flutter:
     - assets/pajaro1.jpg
     - assets/pajaro2.jpg
     - assets/pajaro3.jpg
+    - assets/bulbasaur.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
