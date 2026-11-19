@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Relación Flutter',
+        theme: MiTema.modoClaro,
         initialRoute: '/',
         routes: {
           '/': (context) => const HomeScreen(),
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
           '/ejercicio10': (context) => const Ejercicio10(),
           '/ejercicio11': (context) => const Ejercicio11(),
           '/ejercicio12': (context) => const RandomColors(),
+          '/ejercicio13': (context) => const Ejercicio13(),
         }
     );
   }

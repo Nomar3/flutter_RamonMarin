@@ -1,11 +1,17 @@
 export 'package:flutter/material.dart';
 export 'package:google_fonts/google_fonts.dart'; 
+export 'dart:math';
+export 'dart:async';
+
+//temas
+export '../themes/mi_tema.dart';
+export '../themes/paleta.dart';
 
 //drawer:
 export 'menu_lateral.dart';
 
 //principal:
-export '../home_screen.dart';
+export 'home_screen.dart';
 
 // pantallas:
 export 'ejercicio1.dart';
@@ -28,3 +34,4 @@ export 'ejercicio11/menu_secciones.dart';
 export 'ejercicio11/publicaciones_perfil.dart';
 
 export 'ejercicio12.dart';
+export 'ejercicio13.dart';

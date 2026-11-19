@@ -1,7 +1,3 @@
-import 'package:flutter/material.dart';
-import 'dart:math';
-import 'dart:async';
-
 import 'screens.dart';
 
 void main() {
@@ -59,7 +55,6 @@ class _RandomColors extends State<RandomColors> {
         setState(() {});
       }
     });
-    //juegoTerminado = true;
   }
 
 
@@ -103,9 +98,7 @@ Widget build(BuildContext context) {
   }
 
   return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text("Ejercicio 12"),
       ),
       drawer: const MenuLateral(),
